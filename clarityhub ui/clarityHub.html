@@ -11,15 +11,18 @@
  <nav>
         <!-- navigation links here -->
         <link rel="stylesheet" href="clarityHub.css">
-        <script src="chatbot.js"></script>
+        <script src="clarityHub.js"></script>
     </nav>
 <body>
 
- <div>
+ <div class="box-container" >
             <h2>AI Tutor</h2>
             <p>Our AI tutor provides personalized support for various topics. Ask questions, get explanations, and learn more!</p>
-                <input type="text" id="user-input" placeholder="Type your message here...">
-                <button onclick="findVideo()">Enter</button>
+            <div id="chat-box">
+                <div class="message bot-message">Hello! What would you like me to help with? Choose a topic to learn:</div>
+            </div>   
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-btn">Send</button>
 </div>   
 
 <section>
